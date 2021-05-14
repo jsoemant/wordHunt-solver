@@ -1,5 +1,5 @@
 # wordHunt-solver
-Find all valid word permutations from a grid of words from the iMessage WordHunt Game
+Find all valid word permutations of a grid of words from the iMessage WordHunt Game and crush your friends.
 
 I got tired of losing WordHunt games to friends on iMessage and was bored so I decided to create a quick 30 minute project to give me a little help.  
 Perhaps it can help you too.
