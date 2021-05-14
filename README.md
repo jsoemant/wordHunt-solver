@@ -5,7 +5,7 @@ I got tired of losing WordHunt games to friends on iMessage and was bored so I d
 Perhaps it can help you too.
 
 ## Usage
-Run the Python file and start a WordHunt game and enter in the grid of words as fast as you can from left to right starting from the top without any spaces. Generally, you will be the biggest bottleneck while running this program. After running it will print out all the valid word permutations found, with the highest-value/longest words at the bottom where you can swipe for them first.
+Run the Python file and start a WordHunt game and enter in the grid of words as fast as you can from left to right starting from the top row, without entering any spaces. Generally, you will be the biggest bottleneck while running this program. After running it will print out all the valid word permutations found, with the highest-value/longest words at the bottom where you can swipe for them first.
 
 Speeds depend on your computer and what is concurrently running with the program. For decent optimization I only check words within the lengths of 4 and 10 as realistically I've found from ~20 games that the words you'll be able to swipe for lie within that range, but if it really bothers you you're free to change the constraints.  
 **Use wordHunt.py if you don't care about reading the code as it is 1.3-1.4x faster than wordHunt2.py**
