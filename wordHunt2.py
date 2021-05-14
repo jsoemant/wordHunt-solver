@@ -1,7 +1,7 @@
 import time
 
 """
-NOTE: This is actually slower than the regular wordHunt solver for reasons I detail in the README of the repo.
+NOTE: This is the slow(er) wordHunt solver for reasons I detail in the README of the repo.
 The regular wordHunt solver is around 1.4x faster than this one and depending on your computer that may factor
 in a few extra seconds, but in most cases I doubt it will make a real difference.
 However, readability/syntax-wise this is much better, being organized and clean. 
