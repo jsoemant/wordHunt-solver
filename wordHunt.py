@@ -2,6 +2,11 @@ import time
 
 
 class Trie:
+    """
+    A trie to efficiently find word possibilities - the fantastic thing about tries is that they will cut down on
+    an enormous amount of time by helping us return early if the permutation of words that we are currently on
+    is not a fragment of a real word.
+    """
 
     def __init__(self):
         self.children = {}
