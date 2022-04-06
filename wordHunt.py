@@ -3,7 +3,7 @@ import time
 
 class Trie:
     """
-    A trie to efficiently find word possibilities - the fantastic thing about tries is that they will cut down on
+    A data structure to efficiently find word possibilities - the fantastic thing about tries is that they will cut down on
     an enormous amount of time by helping us return early if the permutation of words that we are currently on
     is not a fragment of a real word.
     """
@@ -87,15 +87,14 @@ class WordHunt:
 
 def run():
     """Runs all relevant functions together"""
-    while True:
-        word_hunt = WordHunt()
-        start = time.time()
-        word_hunt.get_words()
-        found = word_hunt.get_result()
-        end = time.time()
-        for i in sorted(found, key=lambda x: len(x)):
-            print(i)
-        print("Seconds: ", (end - start))
+    word_hunt = WordHunt()
+    start = time.time()
+    word_hunt.get_words()
+    found = word_hunt.get_result()
+    end = time.time()
+    for i in sorted(found, key=lambda x: len(x)):
+        print(i)
+    print("Seconds: ", (end - start))
 
 
 if __name__ == '__main__':
