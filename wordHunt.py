@@ -4,7 +4,7 @@ import time
 class Trie:
     """
     A data structure to efficiently find word possibilities - the fantastic thing about tries is that they will cut down on
-    an enormous amount of time by helping us return early if the permutation of words that we are currently on
+    an enormous amount of time by helping us return early if the permutation of letters that we are currently on
     is not a fragment of a real word.
     """
 
