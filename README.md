@@ -1,7 +1,10 @@
 # wordHunt-solver
+**The fastest Python implementation of a wordHunt solver on GitHub.**
+
 Find all valid word permutations of a grid of words from the iMessage WordHunt Game and crush your friends.
 
 I got tired of losing WordHunt games to friends on iMessage and was bored so I decided to create a quick 30 minute project to give me a little help.  
+
 Perhaps it can help you too.
 
 ## Usage
@@ -9,7 +12,7 @@ Run the Python file and start a WordHunt game and enter in the grid of words as 
 
 Speeds depend on your computer and what is concurrently running with the program, but generally it should run under a second (due to our best friend data structure trie!).
 
-## General Notes/Thoughts on Project/Optimization Concerns
+## General Notes/Thoughts on Project/Optimization Concerns (boring stuff)
 - I use a trie to store all of the possible words from the Collins word set since the biggest bottleneck outside of the user is the fact that the program will check over redundant/nonexistent permutations of letters otherwise. With a trie we can checkover whether the permutation of letters we currently have can even exist as part of a word, and if it does not we can then return early and simply move on.
 - I use a simple DFS algorithm with recursion to find valid word permutations, and then check which ones among them are actual valid words.
 - My first thought was to use an existing Python library to check for valid words because I'm lazy and that's generally one of the benefits of using Python, so I used the popular PyEnchant to check for valid words. However, when testing it was quite slow and I found that PyEnchant's word-check speeds were sluggish. I decided to make my own spellcheck set instead, utilizing Collins Scrabble Words in a text file as my word checker. That sped up the program a crazy amount, I'm guessing PyEnchant's average word-check time complexity is non-ideal.
